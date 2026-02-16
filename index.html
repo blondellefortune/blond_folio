@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio professionnel - Développeur Web Full Stack">
+    <title>Portfolio - Développeur Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">Portfolio</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">À propos</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#experiences" class="nav-link">Expériences</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#formation" class="nav-link">Formation</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="accueil" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Alexandre Martin</h1>
+                    <p class="hero-subtitle">Développeur Web Full Stack</p>
+                    <p class="hero-description">
+                        Passionné par la création d'expériences web modernes et intuitives. 
+                        Je transforme vos idées en applications performantes et élégantes.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                        <a href="#competences" class="btn btn-secondary">Mes compétences</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:contact@example.com" class="social-link" aria-label="Email">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/img/profil.jpg" alt="Photo de profil d'Alexandre Martin" class="profile-img">
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#apropos" class="scroll-indicator" aria-label="Scroll vers le bas">
+                <span></span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- À propos Section -->
+        <section id="apropos" class="section section-about">
+            <div class="container">
+                <h2 class="section-title">À propos</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Diplômé en informatique avec une spécialisation en développement web, 
+                            je combine créativité technique et rigueur méthodologique pour concevoir 
+                            des solutions digitales sur mesure.
+                        </p>
+                        <p>
+                            Mon parcours m'a permis de travailler sur des projets variés, 
+                            du site vitrine à l'application web complexe, en passant par 
+                            l'optimisation de performances et l'expérience utilisateur.
+                        </p>
+                    </div>
+                    <div class="about-info">
+                        <div class="info-card">
+                            <span class="info-label">Localisation</span>
+                            <span class="info-value">Paris, France</span>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-label">Email</span>
+                            <a href="mailto:contact@example.com" class="info-value">contact@example.com</a>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-label">Téléphone</span>
+                            <a href="tel:+33123456789" class="info-value">+33 1 23 45 67 89</a>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-label">Statut</span>
+                            <span class="info-value status-available">Disponible pour missions</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cv">
+                    <a href="assets/cv.pdf" class="btn btn-outline" download>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14 2h-7.229l7.014 7h-13.785v6h13.785l-7.014 7h7.229l10-10z"/>
+                        </svg>
+                        Télécharger mon CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compétences Section -->
+        <section id="competences" class="section section-skills">
+            <div class="container">
+                <h2 class="section-title">Compétences</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Développement Web</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">PHP</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Outils & Workflow</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Webpack</span>
+                            <span class="skill-tag">npm</span>
+                            <span class="skill-tag">Docker</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Bases de données</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Redis</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Méthodologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Agile / Scrum</span>
+                            <span class="skill-tag">TDD</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Responsive Design</span>
+                            <span class="skill-tag">Accessibilité</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expériences Section -->
+        <section id="experiences" class="section section-experiences">
+            <div class="container">
+                <h2 class="section-title">Expériences Professionnelles</h2>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Développeur Web Full Stack</h3>
+                                <span class="timeline-company">TechSolutions SAS</span>
+                                <span class="timeline-date">Janvier 2023 - Présent</span>
+                            </div>
+                            <ul class="timeline-list">
+                                <li>Développement et maintenance d'applications web pour des clients variés</li>
+                                <li>Conception d'API RESTful et intégration de services tiers</li>
+                                <li>Optimisation des performances et amélioration de l'accessibilité</li>
+                                <li>Collaboration avec l'équipe design pour une UX optimale</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Développeur Front-end</h3>
+                                <span class="timeline-company">Digital Agency</span>
+                                <span class="timeline-date">Juin 2021 - Décembre 2022</span>
+                            </div>
+                            <ul class="timeline-list">
+                                <li>Création de sites web responsive et interactifs</li>
+                                <li>Intégration de maquettes Figma en HTML/CSS/JavaScript</li>
+                                <li>Développement de composants React réutilisables</li>
+                                <li>Formation des juniors aux bonnes pratiques</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Stage Développement Web</h3>
+                                <span class="timeline-company">StartUp Innovante</span>
+                                <span class="timeline-date">Janvier 2021 - Mai 2021</span>
+                            </div>
+                            <ul class="timeline-list">
+                                <li>Participation au développement d'une application SaaS</li>
+                                <li>Correction de bugs et amélioration de l'interface</li>
+                                <li>Rédaction de documentation technique</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projets Section -->
+        <section id="projets" class="section section-projects">
+            <div class="container">
+                <h2 class="section-title">Projets</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span>E-commerce</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Boutique en Ligne</h3>
+                            <p class="project-description">
+                                Plateforme e-commerce complète avec panier, paiement sécurisé et tableau de bord administrateur.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    Code
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-.465.465-1.034.764-1.633.898-.588.126-1.198.09-1.778-.096l-2.246 2.245c1.856 2.814 5.558 3.659 8.445 2.069.518-.286 1.005-.648 1.444-1.087l4.304-4.306c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/>
+                                    </svg>
+                                    Démo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder project-placeholder-2">
+                                <span>Task Manager</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Gestionnaire de Tâches</h3>
+                            <p class="project-description">
+                                Application de gestion de tâches collaborative avec notifications en temps réel et tableau Kanban.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Vue.js</span>
+                                <span class="tech-badge">Firebase</span>
+                                <span class="tech-badge">Tailwind</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    Code
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-.465.465-1.034.764-1.633.898-.588.126-1.198.09-1.778-.096l-2.246 2.245c1.856 2.814 5.558 3.659 8.445 2.069.518-.286 1.005-.648 1.444-1.087l4.304-4.306c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/>
+                                    </svg>
+                                    Démo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder project-placeholder-3">
+                                <span>Portfolio API</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">API REST Portfolio</h3>
+                            <p class="project-description">
+                                API RESTful complète pour la gestion de projets portfolio avec authentification JWT et documentation Swagger.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">Express</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    Code
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-.465.465-1.034.764-1.633.898-.588.126-1.198.09-1.778-.096l-2.246 2.245c1.856 2.814 5.558 3.659 8.445 2.069.518-.286 1.005-.648 1.444-1.087l4.304-4.306c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/>
+                                    </svg>
+                                    Démo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder project-placeholder-4">
+                                <span>Weather App</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Application Météo</h3>
+                            <p class="project-description">
+                                Application météo avec géolocalisation, prévisions sur 7 jours et alertes personnalisées.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">API REST</span>
+                                <span class="tech-badge">CSS3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    Code
+                                </a>
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M6.188 8.719c.439-.439.926-.801 1.444-1.087 2.887-1.591 6.589-.745 8.445 2.069l-2.246 2.245c-.644-1.469-2.243-2.305-3.834-1.949-.599.134-1.168.433-1.633.898l-4.304 4.306c-1.307 1.307-1.307 3.433 0 4.74 1.307 1.307 3.433 1.307 4.74 0l1.327-1.327c1.207.479 2.501.67 3.779.575l-2.929 2.929c-2.511 2.511-6.582 2.511-9.093 0s-2.511-6.582 0-9.093l4.304-4.306zm6.836-6.836l-2.929 2.929c1.277-.096 2.572.096 3.779.574l1.326-1.326c1.307-1.307 3.433-1.307 4.74 0 1.307 1.307 1.307 3.433 0 4.74l-4.305 4.305c-.465.465-1.034.764-1.633.898-.588.126-1.198.09-1.778-.096l-2.246 2.245c1.856 2.814 5.558 3.659 8.445 2.069.518-.286 1.005-.648 1.444-1.087l4.304-4.306c2.512-2.511 2.512-6.582.001-9.093-2.511-2.51-6.581-2.51-9.092 0z"/>
+                                    </svg>
+                                    Démo
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formation Section -->
+        <section id="formation" class="section section-education">
+            <div class="container">
+                <h2 class="section-title">Formation</h2>
+                <div class="education-grid">
+                    <article class="education-card">
+                        <div class="education-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 3l11.01 6.5-11.01 6.5-11.01-6.5 11.01-6.5zm0 13.75l.012.008 5.949-3.515 1.051.622-7 4.15-7-4.15 1.051-.622 5.949 3.515.012-.008zm0 2.75l.012.008 5.949-3.515 1.051.622-7 4.15-7-4.15 1.051-.622 5.949 3.515.012-.008z"/>
+                            </svg>
+                        </div>
+                        <div class="education-content">
+                            <h3 class="education-title">Master Informatique</h3>
+                            <span class="education-school">Université Paris-Saclay</span>
+                            <span class="education-date">2020 - 2022</span>
+                            <p class="education-description">
+                                Spécialisation Développement Web et Applications Mobiles. 
+                                Mention Bien.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="education-card">
+                        <div class="education-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 3l11.01 6.5-11.01 6.5-11.01-6.5 11.01-6.5zm0 13.75l.012.008 5.949-3.515 1.051.622-7 4.15-7-4.15 1.051-.622 5.949 3.515.012-.008zm0 2.75l.012.008 5.949-3.515 1.051.622-7 4.15-7-4.15 1.051-.622 5.949 3.515.012-.008z"/>
+                            </svg>
+                        </div>
+                        <div class="education-content">
+                            <h3 class="education-title">Licence Informatique</h3>
+                            <span class="education-school">Université de Lyon</span>
+                            <span class="education-date">2017 - 2020</span>
+                            <p class="education-description">
+                                Fondamentaux en programmation, algorithmique et bases de données.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="education-card">
+                        <div class="education-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22l-1.92 3.32c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
+                            </svg>
+                        </div>
+                        <div class="education-content">
+                            <h3 class="education-title">Certification AWS</h3>
+                            <span class="education-school">Amazon Web Services</span>
+                            <span class="education-date">2023</span>
+                            <p class="education-description">
+                                AWS Certified Cloud Practitioner - Fondamentaux du cloud computing.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p class="contact-intro">
+                            Vous avez un projet en tête ou souhaitez collaborer ? 
+                            N'hésitez pas à me contacter, je réponds généralement sous 24h.
+                        </p>
+                        <div class="contact-methods">
+                            <a href="mailto:contact@example.com" class="contact-method">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Email</span>
+                                    <span class="contact-value">contact@example.com</span>
+                                </div>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-method">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">LinkedIn</span>
+                                    <span class="contact-value">linkedin.com/in/alexandremartin</span>
+                                </div>
+                            </a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-method">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">GitHub</span>
+                                    <span class="contact-value">github.com/alexandremartin</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form" action="mailto:contact@example.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nom</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="votre@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Votre message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    &copy; 2026 Alexandre Martin. Tous droits réservés.
+                </p>
+                <a href="https://github.com/alexandremartin/portfolio" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    Code source sur GitHub
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script pour la navigation active -->
+    <script>
+        // Navigation active au scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Fermer le menu mobile après clic
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.checked = false;
+            });
+        });
+    </script>
+</body>
+</html>
